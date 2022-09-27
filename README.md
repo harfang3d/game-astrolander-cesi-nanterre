@@ -1,4 +1,4 @@
-# game-astro-lander
+# Astro-Lander Game
 
 **CESI x HARFANG Workshop**
 
