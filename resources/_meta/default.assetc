@@ -1,0 +1,10 @@
+ac.Ignore('core/shader/bgfx_shader.sh')
+ac.Ignore('core/shader/forward_pipeline.sh')
+
+ac.PipelineShaderBatch('.', 'forward', true)
+ac.ShaderBatch('.', true)
+ac.GeometryBatch('.', true)
+ac.TextureBatch('.', true)
+ac.LuaScriptBatch('.', true)
+
+ac.CopyRemaining('.')

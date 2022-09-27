@@ -1,0 +1,136 @@
+{
+	"editor": {
+		"animeditor_plugin": {
+			"show_trajectories": 0,
+			"trajectories_tick_seconds": 1.0,
+			"trajectories_tick_size": 0.10000000149011612
+		},
+		"explorer": {
+			"node_custom_order": {
+				"refs": null,
+				"roots": [
+					7
+				]
+			},
+			"node_sort_method": "custom",
+			"show_node_uid": false
+		},
+		"navigation_plugin": {
+			"orbit_distance": 21.468124389648438,
+			"speed": 0.10000000149011612,
+			"turbo": 1.0
+		},
+		"transform_gizmo_plugin": {
+			"mode": "local",
+			"snap": "none",
+			"snap_rotation": 5.0,
+			"snap_rotation_fine": 1.0,
+			"snap_scale": 10.0,
+			"snap_scale_fine": 1.0,
+			"snap_translation": 1.0,
+			"snap_translation_fine": 0.10000000149011612,
+			"tool": "move"
+		},
+		"view_plugin": {
+			"show_cameras": true,
+			"show_lights": true,
+			"show_node_origin": true
+		},
+		"views": {
+			"bottom": [
+				1.0,
+				-0.0,
+				-0.0,
+				0.0,
+				-0.0,
+				-8.742277657347586e-08,
+				1.0,
+				0.0,
+				-0.0,
+				-1.0,
+				-8.742277657347586e-08,
+				0.0
+			],
+			"bottom_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			},
+			"current_camera": 0,
+			"left": [
+				-8.742277657347586e-08,
+				0.0,
+				1.0,
+				0.0,
+				0.0,
+				1.0,
+				-0.0,
+				0.0,
+				-1.0,
+				0.0,
+				-8.742277657347586e-08,
+				0.0
+			],
+			"left_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			},
+			"orthographic_size": 1.0,
+			"perspective": [
+				0.9305074214935303,
+				-0.06467250734567642,
+				-0.3605177700519562,
+				7.739639759063721,
+				0.0,
+				0.9842883348464966,
+				-0.17656944692134857,
+				3.790614366531372,
+				0.366272509098053,
+				0.1642991453409195,
+				0.915887713432312,
+				-19.66239356994629
+			],
+			"perspective_fov": 0.7853981852531433,
+			"perspective_zrange": {
+				"zfar": 1000.0,
+				"znear": 0.009999999776482582
+			},
+			"right": [
+				-8.742277657347586e-08,
+				0.0,
+				-1.0,
+				0.0,
+				0.0,
+				1.0,
+				-0.0,
+				0.0,
+				1.0,
+				-0.0,
+				-8.742277657347586e-08,
+				0.0
+			],
+			"right_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			},
+			"scale": 0.05000000074505806,
+			"top": [
+				1.0,
+				0.0,
+				-0.0,
+				0.0,
+				-0.0,
+				-8.742277657347586e-08,
+				-1.0,
+				0.0,
+				0.0,
+				1.0,
+				-8.742277657347586e-08,
+				0.0
+			],
+			"top_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			}
+		}
+	}
+}
