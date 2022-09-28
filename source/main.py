@@ -118,6 +118,8 @@ while not end_game:
 	hg.LoadSceneFromAssets("assets/pod/pod.scn", scene, res, hg.GetForwardPipelineInfo())
 	fuel = 100.0
 	life = 100.0
+	# 1 - normal / 2 - Quick / 0.5 - Slow
+	time_factor = 1.0
 	collected_all_coins = False
 	level_done = False
 	level_restart = False
@@ -146,6 +148,8 @@ while not end_game:
 	coins = []
 	bonus_life = []
 	bonus_fuel = []
+	bonus_slow_clock = []
+	bonus_fast_clock = []
 	engine_particles = []
 	coll_nodes = []
 	target_tex, _ = hg.LoadTextureFromAssets("assets/pod/touch_feedback.png", 0)
@@ -163,6 +167,12 @@ while not end_game:
 			coins.append({"node": nd, "pos": nd.GetTransform().GetPos()})
 		if nd.HasObject() and nd.GetName().lower() == "bonus_fuel":
 			bonus_fuel.append({"node": nd, "pos": nd.GetTransform().GetPos()})
+		if nd.HasObject() and nd.GetName().lower() == "bonus_heal":
+			bonus_life.append({"node": nd, "pos": nd.GetTransform().GetPos()})
+		if nd.HasObject() and nd.GetName().lower() == "bonus_slow_clock":
+			bonus_slow_clock.append({"node": nd, "pos": nd.GetTransform().GetPos()})
+		if nd.HasObject() and nd.GetName().lower() == "bonus_fast_clock":
+			bonus_fast_clock.append({"node": nd, "pos": nd.GetTransform().GetPos()})
 
 	pod_bbox = hg.Vec3(3.0, 4.0, 2.0)
 
@@ -377,13 +387,30 @@ while not end_game:
 
 			if len(coins) <= 0:
 				collected_all_coins = True
-
+		# get a heal bonus
+		heal_hit = test_pos_vs_nodes_table(hg.GetTranslation(_pod_world), bonus_life, 2.5)
+		if heal_hit > -1:
+			# print(heal_hit)
+			bonus_life[heal_hit]["node"].Disable()
+			life = 100
 		# get a fuel bonus
 		fuel_hit = test_pos_vs_nodes_table(hg.GetTranslation(_pod_world), bonus_fuel, 2.5)
 		if fuel_hit > -1:
 			# print(fuel_hit)
 			bonus_fuel[fuel_hit]["node"].Disable()
 			fuel = 100
+		# get a slow clock bonus
+		slow_clock_hit = test_pos_vs_nodes_table(hg.GetTranslation(_pod_world), bonus_slow_clock, 2.5)
+		if slow_clock_hit > -1:
+			# print(slow_clock_hit)
+			bonus_slow_clock[slow_clock_hit]["node"].Disable()
+			time_factor = 0.5
+		# get a fast clock bonus
+		fast_clock_hit = test_pos_vs_nodes_table(hg.GetTranslation(_pod_world), bonus_fast_clock, 2.5)
+		if fast_clock_hit > -1:
+			# print(fast_clock_hit)
+			bonus_fast_clock[fast_clock_hit]["node"].Disable()
+			time_factor = 2.0
 
 
 		if collected_all_coins and life > 0:
@@ -394,7 +421,7 @@ while not end_game:
 					level_idx += 1
 
 		# scene.Update(dt)
-		hg.SceneUpdateSystems(scene, clocks, dt, physics, physic_step, 10)
+		hg.SceneUpdateSystems(scene, clocks, hg.time_from_sec_f(hg.time_to_sec_f(dt) * time_factor), physics, physic_step, 10)
 		if aaa_rendering:
 			view_id, pass_id = hg.SubmitSceneToPipeline(0, scene, hg.IntRect(0, 0, res_x, res_y), True, pipeline, res, pipeline_aaa, pipeline_aaa_config, frame)
 
@@ -412,7 +439,7 @@ while not end_game:
 		else: 
 			hg.DrawText(view_id, font, 'Render : Basic (K to Switch)', font_program, 'u_tex', 0, hg.Mat4.Identity, hg.Vec3(200, res_y - 120, 0), hg.DTHA_Left, hg.DTVA_Bottom, text_uniform_values, [], text_render_state)
 
-		hg.DrawText(view_id, font, 'dt: %f' % dtsmooth, font_program, 'u_tex', 0, hg.Mat4.Identity, hg.Vec3(200, res_y - 80, 0), hg.DTHA_Left, hg.DTVA_Bottom, text_uniform_values, [], text_render_state)
+		hg.DrawText(view_id, font, 'Time factor: %f' % time_factor, font_program, 'u_tex', 0, hg.Mat4.Identity, hg.Vec3(200, res_y - 80, 0), hg.DTHA_Left, hg.DTVA_Bottom, text_uniform_values, [], text_render_state)
 		hg.DrawText(view_id, font, 'Level %d' % (level_idx + 1), font_program, 'u_tex', 0, hg.Mat4.Identity, hg.Vec3(200, res_y - 40, 0), hg.DTHA_Left, hg.DTVA_Bottom, text_uniform_values, [], text_render_state)
 		if life < 1 or fuel < 1:
 			if velocity < 0.03:
