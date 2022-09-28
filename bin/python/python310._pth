@@ -1,5 +1,6 @@
 python310.zip
 .
+..\..\source\
 ..\harfang\
 
 # Uncomment to run site.main() automatically
