@@ -1,0 +1,188 @@
+{
+	"editor": {
+		"animeditor_plugin": {
+			"quantize_time": true,
+			"show_trajectories": null,
+			"trajectories_tick_seconds": 1.0,
+			"trajectories_tick_size": 0.10000000149011612
+		},
+		"explorer": {
+			"node_custom_order": {
+				"refs": null,
+				"roots": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11
+				]
+			},
+			"node_sort_method": "alphabetical",
+			"show_node_uid": false
+		},
+		"grid_plugin": {
+			"enabled": true,
+			"grid_color_b": 1.0,
+			"grid_color_g": 1.0,
+			"grid_color_r": 1.0,
+			"n_subdivs": 10,
+			"offset": 0.0,
+			"opacity": 0.5,
+			"subdiv_size": 1.0
+		},
+		"navigation_plugin": {
+			"orbit_distance": 274.0028381347656,
+			"speed": 0.10000000149011612,
+			"turbo": 1.0
+		},
+		"transform_gizmo_plugin": {
+			"mode": "local",
+			"snap": "none",
+			"snap_rotation": 5.0,
+			"snap_rotation_fine": 1.0,
+			"snap_scale": 10.0,
+			"snap_scale_fine": 1.0,
+			"snap_translation": 1.0,
+			"snap_translation_fine": 0.10000000149011612,
+			"tool": "move"
+		},
+		"view_plugin": {
+			"show_cameras": true,
+			"show_collisions": false,
+			"show_lights": true,
+			"show_nodes": true,
+			"show_probe": true
+		},
+		"views": {
+			"back": [
+				-0.9999999403953552,
+				0.0,
+				-8.742277657347586e-08,
+				25.948881149291992,
+				0.0,
+				1.0,
+				0.0,
+				10.536819458007813,
+				8.742277657347586e-08,
+				0.0,
+				-0.9999999403953552,
+				-95.0
+			],
+			"bottom": [
+				1.0,
+				-0.0,
+				-0.0,
+				0.0,
+				-0.0,
+				-8.742277657347586e-08,
+				1.0,
+				0.0,
+				-0.0,
+				-1.0,
+				-8.742277657347586e-08,
+				0.0
+			],
+			"bottom_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			},
+			"current_camera": 0,
+			"front": [
+				1.0,
+				0.0,
+				0.0,
+				0.0,
+				0.0,
+				1.0,
+				-0.0,
+				0.0,
+				0.0,
+				0.0,
+				1.0,
+				0.0
+			],
+			"left": [
+				-8.742277657347586e-08,
+				0.0,
+				1.0,
+				3.0,
+				0.0,
+				1.0,
+				0.0,
+				8.218999862670898,
+				-1.0,
+				0.0,
+				-8.742277657347586e-08,
+				4.37113897078234e-07
+			],
+			"left_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			},
+			"orthographic_size": 60.88954544067383,
+			"perspective": [
+				0.9998515844345093,
+				-0.000787521421443671,
+				-0.017482029274106026,
+				27.442726135253906,
+				0.0,
+				0.9989900588989258,
+				-0.044986214488744736,
+				22.704561233520508,
+				0.017496047541499138,
+				0.044979773461818695,
+				0.9988493323326111,
+				-254.747802734375
+			],
+			"perspective_fov": 0.24646618962287903,
+			"perspective_zrange": {
+				"zfar": 1000.0,
+				"znear": 0.009999999776482582
+			},
+			"right": [
+				-8.742277657347586e-08,
+				0.0,
+				-1.0,
+				0.0,
+				0.0,
+				1.0,
+				-0.0,
+				0.0,
+				1.0,
+				-0.0,
+				-8.742277657347586e-08,
+				0.0
+			],
+			"right_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			},
+			"scale": 0.05000000074505806,
+			"top": [
+				1.0,
+				0.0,
+				-0.0,
+				0.0,
+				-0.0,
+				-8.742277657347586e-08,
+				-1.0,
+				0.0,
+				0.0,
+				1.0,
+				-8.742277657347586e-08,
+				0.0
+			],
+			"top_zrange": {
+				"zfar": 1000.0,
+				"znear": -1000.0
+			}
+		}
+	}
+}
