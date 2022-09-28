@@ -2,5 +2,8 @@
 
 **CESI x HARFANG Workshop**
 
- - Python 3
- - Harfang 3.2.4
+Requirements:
+ - Python 3 (provided)
+ - Harfang 3.2.4 (provided)
+ - VSCode
+ - Blender/Maya (optional)
