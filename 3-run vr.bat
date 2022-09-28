@@ -1,2 +1,2 @@
-python source\main_vr.py
+cd source && ..\bin\python\python.exe main_vr.py
 pause
