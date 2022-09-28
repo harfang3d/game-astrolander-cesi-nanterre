@@ -13,6 +13,8 @@ from particles import InitParticle, UpdateParticleSystem
 level_idx = 0
 consumption = 2.5
 
+print(levels)
+
 hg.InputInit()
 hg.AudioInit()
 hg.WindowSystemInit()
