@@ -102,7 +102,7 @@ mouse = hg.Mouse()
 # game logic
 end_game = False
 aaa_rendering = True
-levels.append("assets/titles/victory.scn")
+levels.append({"level" :"assets/titles/victory.scn", "music": "audio/music/children_of_science.wav", "background": "assets/background_1.scn"})
 
 while not end_game:
 	# Setup scene:
