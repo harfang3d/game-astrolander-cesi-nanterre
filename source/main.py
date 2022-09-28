@@ -25,7 +25,7 @@ win = hg.RenderInit('AstroLander', res_x, res_y, hg.RF_VSync | hg.RF_MSAA4X)
 
 # hg.SetRenderDebug(hg.RenderDebugProfiler | hg.RenderDebugStats | hg.RenderDebugText)
 
-hg.AddAssetsFolder("assets/")
+hg.AddAssetsFolder("../assets/")
 
 # rendering pipeline
 pipeline = hg.CreateForwardPipeline(2048, True)

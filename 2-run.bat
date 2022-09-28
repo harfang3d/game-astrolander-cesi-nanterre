@@ -1,2 +1,2 @@
-bin\python\python.exe source\main.py
+cd source && ..\bin\python\python.exe main.py
 pause
