@@ -24,7 +24,7 @@ win = hg.RenderInit('AstroLander', res_x, res_y, hg.RF_VSync | hg.RF_MSAA4X)
 
 # hg.SetRenderDebug(hg.RenderDebugProfiler | hg.RenderDebugStats | hg.RenderDebugText)
 
-hg.AddAssetsFolder("assets/")
+hg.AddAssetsFolder("../assets/")
 
 # rendering pipeline
 pipeline = hg.CreateForwardPipeline(2048, True)
@@ -172,7 +172,7 @@ mouse = hg.Mouse()
 # game logic
 end_game = False
 aaa_rendering = True
-levels.append("assets/titles/victory.scn")
+levels.append({"level" :"assets/titles/victory.scn", "music": "audio/music/children_of_science.wav", "background": "assets/background_1.scn"})
 
 while not end_game:
 	# Setup scene:
@@ -195,10 +195,10 @@ while not end_game:
 
 	# world
 	# background
-	hg.LoadSceneFromAssets("assets/background.scn", scene, res, hg.GetForwardPipelineInfo())
+	hg.LoadSceneFromAssets(levels[level_idx]['background'], scene, res, hg.GetForwardPipelineInfo())
 
 	# level
-	hg.LoadSceneFromAssets(levels[level_idx], scene, res, hg.GetForwardPipelineInfo())
+	hg.LoadSceneFromAssets(levels[level_idx]['level'], scene, res, hg.GetForwardPipelineInfo())
 
 	# fog
 	scene.environment.fog_color = scene.canvas.color
