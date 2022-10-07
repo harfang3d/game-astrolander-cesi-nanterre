@@ -1,20 +1,41 @@
 # Astro-Lander Game
 
-**CESI x HARFANG Workshop**
+## CESI x HARFANG Workshop
 
-Requirements:
+Astro-Lander is a game prototype co-created during a 1-day workshop between [CESI Nanterre](https://paris.cesi.fr/) & [Harfang 3D](https://www.harfang3d.com).
+* All the levels where created by CESI students.
+* Some of the game logic was implemented by the students.
+* The game is open source and can be re-used for any other purpose.
+
+## If you want to play :video_game:
+ - Download the [latest release](https://github.com/harfang3d/game-astro-lander/releases) (look for a file like ` astrolander_xxx.zip`)
+ - Unzip it
+ - Run `1-assetc.bat`
+ - Run `2-run.bat` (or `3-run vr.bat` if you feel lucky)
+ - To control the lander (the spaceship with a little :brain: in it) press the arrow keys:
+   - :arrow_left: Thrust `left`
+   - :arrow_right: Thrust `right`
+   - :arrow_left: + :arrow_right: Thrust `up`
+ - Get all the coins
+ - Reach the homebase (flat cylinder on the ground, looking like a target, facing upward)
+ - If your life reach `0`, you die
+ - If your fuel reach `0, you die
+
+## If you want to code :computer:
+
+### Requirements:
  - Python 3 (provided)
  - [Harfang 3.2.4](https://pypi.org/project/harfang/) (provided)
  - VSCode
  - [Harfang Studio](https://www.harfang3d.com/en_US/studio)
  - Blender/Maya (optional)
  
- How do install it:
+ ### How do install it:
  - clone the repository
  - open the folder in VSCode
  - run it
  
- How to edit/create a new level:
+ ### How to edit/create a new level:
  - Install [Harfang Studio](https://www.harfang3d.com/en_US/studio)
  - Run Harfang Studio
  - open the project (`resources/project.prj`)
