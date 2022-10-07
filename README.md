@@ -45,8 +45,8 @@ Astro-Lander is a game prototype co-created during a 1-day workshop between [CES
  - Run Harfang Studio
  - open the project (`resources/project.prj`)
  - look for the `resources/scenes/levels` folder
- 
-## Contributors
+
+## Contributors :red_haired_woman: :man: :bald_woman: :bearded_person:
 - AroD117
 - Astrofra
 - Disketflu
