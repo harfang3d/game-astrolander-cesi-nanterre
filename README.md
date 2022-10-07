@@ -1,10 +1,13 @@
+<img src="img/logo_cesi_harfang.png" align="right" width="300"/>
+
 # Astro-Lander Game
 
 ## CESI x HARFANG Workshop
 
+Astro-Lander is a game prototype co-created during a 1-day workshop between [CESI Nanterre](https://paris.cesi.fr/) & [Harfang 3D](https://www.harfang3d.com). The game relies on realtime physics to challenge the player on their skills to counterbalance gravity and inertia.
+
 ![gameplay](img/gameplay_000_web.gif)
 
-Astro-Lander is a game prototype co-created during a 1-day workshop between [CESI Nanterre](https://paris.cesi.fr/) & [Harfang 3D](https://www.harfang3d.com).
 * All the levels where created by CESI students.
 * Some of the game logic was implemented by the students.
 * The game is open source and can be re-used for any other purpose.
@@ -21,6 +24,7 @@ Astro-Lander is a game prototype co-created during a 1-day workshop between [CES
  - Reach the homebase (flat cylinder on the ground, looking like a target, facing upward)
  - If your life reach `0`, you die
  - If your fuel reach `0`, you die
+ - Press `k` to enable the `AAA` rendering mode (realtime GI and reflections)
 
 ## If you want to code :computer:
 
