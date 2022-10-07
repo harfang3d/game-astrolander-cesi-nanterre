@@ -4,7 +4,8 @@
 
 ## CESI x HARFANG Workshop
 
-Astro-Lander is a game prototype co-created during a 1-day workshop between [CESI Nanterre](https://paris.cesi.fr/) & [Harfang 3D](https://www.harfang3d.com). The game relies on realtime physics to challenge the player on their skills to counterbalance gravity and inertia.
+Astro-Lander is a game prototype co-created during a 1-day workshop between [CESI Nanterre](https://paris.cesi.fr/) & [Harfang 3D](https://www.harfang3d.com). The game relies on realtime physics to challenge the player on their skills to counterbalance gravity and inertia.<br>
+Astro-Lander is implemented in [Python](https://www.python.org/) :snake:
 
 ![gameplay](img/gameplay_000_web.gif)
 
