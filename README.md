@@ -2,6 +2,8 @@
 
 ## CESI x HARFANG Workshop
 
+![gameplay](img/gameplay_000_web.gif)
+
 Astro-Lander is a game prototype co-created during a 1-day workshop between [CESI Nanterre](https://paris.cesi.fr/) & [Harfang 3D](https://www.harfang3d.com).
 * All the levels where created by CESI students.
 * Some of the game logic was implemented by the students.
