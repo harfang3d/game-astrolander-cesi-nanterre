@@ -10,8 +10,7 @@ Astro-Lander is a game prototype co-created during a 1-day workshop between [CES
 ## If you want to play :video_game:
  - Download the [latest release](https://github.com/harfang3d/game-astro-lander/releases) (look for a file like ` astrolander_xxx.zip`)
  - Unzip it
- - Run `1-assetc.bat`
- - Run `2-run.bat` (or `3-run vr.bat` if you feel lucky)
+ - Run `2-run.bat` (or `3-run vr.bat` if you feel lucky and have SteamVR installed with a VR headset)
  - To control the lander (the spaceship with a little :brain: in it) press the arrow keys:
    - :arrow_left: Thrust `left`
    - :arrow_right: Thrust `right`
