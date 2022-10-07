@@ -19,7 +19,7 @@ Astro-Lander is a game prototype co-created during a 1-day workshop between [CES
  - Get all the coins
  - Reach the homebase (flat cylinder on the ground, looking like a target, facing upward)
  - If your life reach `0`, you die
- - If your fuel reach `0, you die
+ - If your fuel reach `0`, you die
 
 ## If you want to code :computer:
 
