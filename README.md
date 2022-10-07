@@ -9,7 +9,7 @@ Astro-Lander is implemented in [Python](https://www.python.org/) :snake:
 
 ![gameplay](img/gameplay_000_web.gif)
 
-* All the levels where created by CESI students.
+* All the levels were created by a team of CS students at CESI Nanterre.
 * Some of the game logic was implemented by the students.
 * The game is open source and can be re-used for any other purpose.
 
