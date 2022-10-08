@@ -12,6 +12,8 @@ Astro-Lander can be played:
 - in VR, using any SteamVR-compatible heaset and the controllers
 The gameplay remains in 2D, the display being in 3D or VR.
 
+**Gameplay preview**
+
 ![gameplay](img/gameplay_000_web.gif)
 
 * All the levels were created by a team of CS students at CESI Nanterre.
