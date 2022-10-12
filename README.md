@@ -5,7 +5,7 @@
 ## CESI x HARFANG Workshop
 
 Astro-Lander is a game prototype co-created during a 1-day workshop between [CESI Nanterre](https://paris.cesi.fr/) & [Harfang 3D](https://www.harfang3d.com). The game relies on realtime physics to challenge the player on their skills to counterbalance gravity and inertia.<br>
-Astro-Lander is implemented in [Python](https://www.python.org/) :snake:<br>
+Astro-Lander works both in 2D and VR. It is implemented in [Python](https://www.python.org/) :snake:<br>
 
 Astro-Lander can be played:
 - on a PC (desktop/laptop) using the keyboard
